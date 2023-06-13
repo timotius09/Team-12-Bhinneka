@@ -50,3 +50,22 @@ function myalert6() {
   alert("Terima Kasih!\n " + 
       "Anda telah membeli Cozy Pants Maroon");
 }
+
+/* Menampilkan tombol toggler di tampilan mobile */
+
+// Toggler collapse
+var toggler = document.getElementById("toggler");
+var navbar = document.querySelector(".navbar");
+
+toggler.addEventListener("click", function() {
+    navbar.classList.toggle("show");
+});
+
+// Animasi collapse
+var navbarLinks = document.querySelectorAll(".navbar a");
+
+navbarLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        navbar.classList.remove("show");
+    });
+});
