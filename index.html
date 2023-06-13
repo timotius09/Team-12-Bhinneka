@@ -1,234 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 12 Bhinneka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous" />
 
-<!-- font awesoome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font awesoome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-<!-- custom css file link -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="styles.css" />
 
-<!-- custom js file link  -->
-   <script src="script.js" defer></script>
-
+    <!-- custom js file link  -->
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet" />
 </head>
-<body>
 
-<!-- header section starts -->
+<body id="home">
+    <!-- ======================================== Navbar ============================================= -->
 
     <header>
-        <input type="checkbox" name="" id="toggler">
-            <label for="toggler" class="fas fa-bars"></label>
-            <a href="#" class="logo">Online Storefront<span>.</span></a>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Team 12 Bhinneka</a>
 
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#product">Product</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">About Us</a>
-    </nav>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#about">About Us</a>
+        </nav>
 
-    <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- ======================================== Home Section ============================================= -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh Clothing</h3>
+            <span> Redefine Your Style </span>
+            <p>
+                Discover the essence of timeless elegance with our exquisite
+                collection of women's fashion. From chic dresses to sophisticated
+                blouses, we offer a curated selection that celebrates your
+                individuality and empowers your style
+            </p>
+            <a href="#news" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- ======================================== home section end ============================================= -->
+
+
+
+    <!-- ======================================== Product Section ============================================= -->
+    <div class="container" id="product">
+        <h3 class="title text-dark">Our Products</h3>
+
+        <div class="products-container">
+            <div class="product" data-name="p-1">
+                <img src="images/1.jpg" alt="" />
+                <h3>Dersik Shirt Navy</h3>
+                <div class="price">Rp 189.000</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="images/2.jpg" alt="" />
+                <h3>Wool Overshirt Gray</h3>
+                <div class="price">Rp 289.000</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="images/3.jpg" alt="" />
+                <h3>Line Knit Top Green</h3>
+                <div class="price">Rp 269.000</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="images/4.jpg" alt="" />
+                <h3>Cozy Pants Navy</h3>
+                <div class="price">Rp 169.000</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="images/5.jpg" alt="" />
+                <h3>Cozy Pants Black</h3>
+                <div class="price">Rp 169.000</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="images/6.jpg" alt="" />
+                <h3>Cozy Pants Maroon</h3>
+                <div class="price">Rp 169.000</div>
+            </div>
+        </div>
     </div>
+    <!-- ======================================== End Product Section ============================================= -->
 
-</header>
 
 
-<!-- header section ends -->
-    
-<!-- home section starts -->
 
-<section class="home" id="home">
 
-    <div class="content">
-        <h3>Fresh Clothing</h3>
-        <span> natural & beautiful clothing </span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quas doloribus. Sapiente modi necessitatibus molestias molestiae, id, ab rerum, quos porro nostrum consequuntur maiores obcaecati perferendis deserunt numquam natus. Cupiditate!</p>
-        <a href="#" class="btn">shop now</a>
+    <!-- ======================================== Pop Up - Preview ============================================= -->
+    <div class="products-preview">
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/1.jpg" alt="" /> -->
+            <h3>Dersik Shirt Navy</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Shirt with a mandarin collar, long sleeves and drop shoulders. The sleeves are large and the wrist
+                cutting is
+                wrinkled, giving off a vintage look. Equipped with a button opening on the front, making this
+                Dersik Shirt
+                breastfeeding friendly.
+            </p>
+            <div class="price">Rp 189.000</div>
+            <div class="buttons" onclick="myalert()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/2.jpg" alt="" /> -->
+            <h3>Wool Overshirt Gray</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Is this jacket or shirt? Can be used for unisex, loose cutting and suitable for all styles. There
+                are two pockets
+                on the bottom front, regular collar, and THENBLANK signature button. It comes in two timeless black
+                and white color
+                combination motifs that are perfect for pairing with Crop Stretch Pants.
+            </p>
+            <div class="price">Rp 289.000</div>
+            <div class="buttons" onclick="myalert2()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/3.jpg" alt="" /> -->
+            <h3>Line Knit Top Green</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Knit long sleeve top with classic collar and three button polo opening on front. Comes with relaxed
+                cutting so it
+                doesn't cross the body and the back is longer. There is a white line accent on the front and a
+                vertical knitting
+                technique that will make you look slim. Slit accent details on the sides, making you more free to
+                move. This Knit
+                Top line comes in a set with the Knit Culotte line, and is available in 2 color choices.
+            </p>
+            <div class="price">Rp 269.000</div>
+            <div class="buttons" onclick="myalert3()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/4.jpg" alt="" /> -->
+            <h3>Cozy Pants Navy</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Super comfortable trousers for you to wear in all your activities. Comes with a wide cutting that
+                gives flexibility
+                in moving and a full elastic band on the waist and an adjustable strap. The material is not hot
+                with pockets on the
+                right and left, making these pants perfect for your leisure and traveling companion
+            </p>
+            <div class="price">Rp 169.000</div>
+            <div class="buttons" onclick="myalert4()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/5.jpg" alt="" /> -->
+            <h3>Cozy Pants Black</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Super comfortable trousers for you to wear in all your activities. Comes with a wide cutting that
+                gives flexibility
+                in moving and a full elastic band on the waist and an adjustable strap. The material is not hot
+                with pockets on the
+                right and left, making these pants perfect for your leisure and traveling companion
+            </p>
+            <div class="price">Rp 169.000</div>
+            <div class="buttons" onclick="myalert5()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <!-- <img class="imgpreview" src="images/6.jpg" alt="" /> -->
+            <h3>Cozy Pants Maroon</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>
+                Super comfortable trousers for you to wear in all your activities. Comes with a wide cutting that
+                gives flexibility
+                in moving and a full elastic band on the waist and an adjustable strap. The material is not hot
+                with pockets on the
+                right and left, making these pants perfect for your leisure and traveling companion
+            </p>
+            <div class="price">Rp 169.000</div>
+            <div class="buttons" onclick="myalert6()">
+                <a href="#product" class="cart">Buy Now</a>
+            </div>
+        </div>
     </div>
-</section>
+    <!-- ======================================== end Pop Up - Preview ============================================= -->
 
-<!-- home section ends -->
 
- <!-- Product Section -->    
- 
- <div class="container">
 
-   <h3 class="title"> organic products </h3>
 
-   <div class="products-container">
+    <!-- ======================================== testimonials ============================================= -->
+    <section class="py-5" id="testimonials">
+        <h1 class="text-center text-dark text-capitalize">
+            Testimonials
+        </h1>
+        <div class="container-fluid d-flex justify-content-evenly">
+            <div class="row py-5">
+                <div class="col py-5 col-sm-12 mb-3 mb-sm-0 col-md-3">
+                    <div class="card">
+                        <img src="https://images.generated.photos/bLkULhVJWbphMM9p3vFQ6r5P0NP1MPsxdtBXUE_q5Vc/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTM1MzE0LmpwZw.jpg"
+                            class="card-img-top" alt="Default image ALT" />
+                        <div class="card-body">
+                            <div class="content-item">
+                                <h4 class="highlight fw-bold">Khatifah Husnia</h4>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small fw-bold mb-3">Jakarta</div>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small">
+                                    Good sis. really worth it at the same price. the packaging is neat, not
+                                    scratched at all. anyway, sister's shop is the best
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-5 col-sm-12 mb-3 mb-sm-0 col-md-3">
+                    <div class="card">
+                        <img src="https://images.generated.photos/eb0Gieln9rGSFoBvF7la2-3sxx8oA3-ffeBbJn1Xsro/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTA5NjcxLmpwZw.jpg"
+                            class="card-img-top" alt="Default image ALT" />
+                        <div class="card-body">
+                            <div class="content-item">
+                                <h4 class="highlight fw-bold">Lathifah Haura</h4>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small fw-semibold mb-3">Surabaya</div>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small">
+                                    Good stuff, quality. the packaging is great, very neat. the seller also
+                                    friendly. anyway, recommended for you
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-5 col-sm-12 mb-3 mb-sm-0 col-md-3">
+                    <div class="card">
+                        <img src="https://images.generated.photos/xgg_SGNdR2jN-YzDjd1XNexAXetMbg_tZX59VPHS3mQ/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NjMzOTU0LmpwZw.jpg"
+                            class="card-img-top" alt="Default image ALT" />
+                        <div class="card-body">
+                            <div class="content-item">
+                                <h4 class="highlight fw-bold">Malina Hanisah</h4>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small fw-semibold mb-3">Medan</div>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small">
+                                    Even though the price is cheap, the quality is really good sis. i really
+                                    recommend your shop if you want to buy clothes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-5 col-sm-12 mb-3 mb-sm-0 col-md-3">
+                    <div class="card">
+                        <img src="https://images.generated.photos/D7-LOkFnTXNnsSUIS5TL5IiG2FKR_OcVvdUP5DcchZM/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDY2MTc1LmpwZw.jpg"
+                            class="card-img-top" alt="Default image ALT" />
+                        <div class="card-body">
+                            <div class="content-item">
+                                <h4 class="highlight fw-bold">Nabila Bilqis</h4>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small fw-semibold mb-3">Semarang</div>
+                            </div>
+                            <div class="content-item">
+                                <div class="highlight-small">
+                                    Magezy's service is really good. even though i ask a lot of questions, the CS
+                                    is still patient. the best for this shop
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== end testimonials ============================================= -->
 
-      <div class="product" data-name="p-1">
-         <img src="images/1.png" alt="">
-         <h3>strawberries</h3>
-         <div class="price">$2.00</div>
-      </div>
 
-      <div class="product" data-name="p-2">
-         <img src="images/2.png" alt="">
-         <h3>onions</h3>
-         <div class="price">$2.00</div>
-      </div>
 
-      <div class="product" data-name="p-3">
-         <img src="images/3.png" alt="">
-         <h3>tomatoes</h3>
-         <div class="price">$2.00</div>
-      </div>
+    <!-- ========================================   about us Section ============================================= -->
+    <div class="about-me bg-lightgray">
+        <div class="container">
+            <div class="row">
+                <h1 class="display-5 text-center my-5 py-5" id="about">About Us</h1>
+                <div class="col-sm-12 mb-3 mb-sm-0">
+                    <div class="card ourbrand">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Our Brand
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-3">
+                                        <p>Since 2012. We're committed to always give you a better daily-wear with
+                                            timeless and minimalist design as our guide, either casual,
+                                            semi-formal, or formal look, that you'll love to wear anywhere and
+                                            anytime.
+                                            All of our collection were made with a great
+                                            attention to material selection, cutting, and accessories, all made by
+                                            Indonesian, in Indonesia. Dress well, keep it
+                                            simple!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-3" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Our Team
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-3">
+                                        <p>Kami adalah tim yang berdedikasi dalam menciptakan solusi inovatif dan
+                                            memberikan pengalaman luar biasa kepada klien
+                                            kami. Dengan keahlian yang beragam dan semangat kolaboratif, kami
+                                            memadukan
+                                            pengetahuan teknis dan kreativitas untuk
+                                            menghadirkan hasil yang luar biasa.Kami percaya bahwa kolaborasi yang
+                                            kuat
+                                            dan komunikasi yang efektif adalah kunci keberhasilan proyek. Hubungi
+                                            kami
+                                            hari
+                                            ini untuk menjalin kerjasama dan menciptakan solusi yang inovatif untuk
+                                            bisnis Anda!</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Number</th>
+                                                            <th scope="col">Name</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Timotius</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>Feni Amyar</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td colspan="2">Selvy Nur Dwi</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">4</th>
+                                                            <td colspan="2">Angki Teja</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">5</th>
+                                                            <td colspan="2">Annisa Adelia</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">6</th>
+                                                            <td colspan="2">Fityan Hanif</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Number</th>
+                                                            <th scope="col">Name</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">7</th>
+                                                            <td>Daffa Fadillah</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">8</th>
+                                                            <td>Neisita Ayuningtias</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">9</th>
+                                                            <td colspan="2">Annisa Saragih</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">10</th>
+                                                            <td colspan="2">Eristya Handayani</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">11</th>
+                                                            <td colspan="2">Nia Octavia</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">12</th>
+                                                            <td colspan="2">Fani Setiawati</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================== end about us Section ============================================= -->
 
-      <div class="product" data-name="p-4">
-         <img src="images/4.png" alt="">
-         <h3>brinjal</h3>
-         <div class="price">$2.00</div>
-      </div>
 
-      <div class="product" data-name="p-5">
-         <img src="images/5.png" alt="">
-         <h3>broccoli</h3>
-         <div class="price">$2.00</div>
-      </div>
 
-      <div class="product" data-name="p-6">
-         <img src="images/6.png" alt="">
-         <h3>potatoes</h3>
-         <div class="price">$2.00</div>
-      </div>
 
-   </div>
+        <!-- ======================================== end Newsletter Section ============================================= -->
+        <div class="wrap">
+            <div class="register">
+                <!-- <img class="imgnewsletter" src="./images/sign-up.jpg" id="news" /> -->
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated for new collection & special offer</p>
+                <ul class="register-list">
+                    <li>Receive exclusive offers</li>
+                    <li>Get notified about new products</li>
+                    <li>Be the first-in the know about our new events</li>
+                </ul>
+                <form>
+                    <tr>
+                        <td>
+                            <input type="name" placeholder="Enter your name" required />
+                        </td>
 
-</div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="Enter your email" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><input type="checkbox" value="setuju" required />I agree to receive e-mails
+                                subscriptions</p>
+                        </td>
+                    </tr>
 
-<div class="products-preview">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- ======================================== end Newsletter Section ============================================= -->
 
-   <div class="preview" data-target="p-1">
-      <i class="fas fa-times"></i>
-      <img src="images/1.png" alt="">
-      <h3>organic strawberries</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
 
-   <div class="preview" data-target="p-2">
-      <i class="fas fa-times"></i>
-      <img src="images/2.png" alt="">
-      <h3>organic onions</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
 
-   <div class="preview" data-target="p-3">
-      <i class="fas fa-times"></i>
-      <img src="images/3.png" alt="">
-      <h3>organic tomatoes</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-4">
-      <i class="fas fa-times"></i>
-      <img src="images/4.png" alt="">
-      <h3>organic brinjal</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-5">
-      <i class="fas fa-times"></i>
-      <img src="images/5.png" alt="">
-      <h3>organic broccoli</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-6">
-      <i class="fas fa-times"></i>
-      <img src="images/6.png" alt="">
-      <h3>organic potatoes</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="price">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-</div>
-
-  
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
