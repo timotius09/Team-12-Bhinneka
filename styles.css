@@ -165,6 +165,7 @@ html {
 
 body {
   background: lightgray;
+  font-family: "Roboto", sans-serif;
 }
 /* Styling for desktop view */
 .navbar {
