@@ -77,6 +77,11 @@ header .logo span {
   color: var(--pink);
 }
 
+.navbar{
+    font-weight: bolder;
+    color: black;
+}
+
 header .navbar a {
   font-size: 2rem;
   padding: 0 1.5rem;
