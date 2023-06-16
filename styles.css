@@ -578,10 +578,10 @@ body {
 }
 
  footer {
-     background-color: #000;
+     background-color: lightgray;
      padding: 16px;
      text-align: center;
-     color: lightgray;
-     font-size: 5rem;
+     color: black;
+     font-size: 3rem;
      line-height: 24px;
  }
