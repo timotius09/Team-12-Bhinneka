@@ -158,15 +158,10 @@ header .fa-bars {
   transition: all 0.2s linear; 
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
 body {
   background: lightgray;
 }
+
 /* Styling for desktop view */
 .navbar {
     display: flex;
